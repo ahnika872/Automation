@@ -1,9 +1,12 @@
+n = int(input())
 def fizz_buzz(n):
-    for i in range(1,n):
-        if i/3:
+    for n in range(1,n+1):
+        if n%3==0:
             print('Fizz')
-        if i/5:
+        elif n%5==0:
             print('Buzz')
-        if i/3 and i/5:
+        elif n%3==0 and n%5==0:
             print('FizzBuzz')
-print(fizz_buzz(9))
+        else:
+            print(n)
+fizz_buzz(n)
